@@ -98,6 +98,34 @@
     </div>
 
 
+    <script defer>
+
+
+        var block = document.querySelector('.block');
+        var buttons = document.querySelectorAll('.link');
+
+        block.addEventListener('click', function (event) {
+            if (event.target.tagName == 'BUTTON' || 'A') {
+                var confm = confirm('Хотите перейти на другую страницу?');
+                switch (confm) {
+                    case true:
+                        alert('Opening..');
+                        break
+                    default:
+                        event.preventDefault();
+                        buttons.forEach(button => {
+                            button.style.border = '1px solid red';
+                        })
+
+
+                }
+            }
+        })
+
+
+    </script>
+
+
 
 
 
