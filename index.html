@@ -110,6 +110,28 @@
             font-size: 25px;
             font-weight: bold;
         }
+
+        .select__label {
+            font-size: 30px;
+            letter-spacing: 1px;
+
+        }
+
+        #wrapper__block-select {
+            width: 200px;
+            background-color: white;
+            border: none;
+            color: cornflowerblue;
+            font-size: 18px;
+            border-radius: 4px;
+            cursor: pointer;
+            letter-spacing: 1px;
+            padding: 3px;
+            text-align: center;
+            font-weight: 500;
+
+
+        }
     </style>
 
 
@@ -129,7 +151,29 @@
 
         <div class="wrapper__block">
 
-            <button title="Diary" class="link">
+            <p class="select__label">Links:</p>
+
+            <select onchange="window.location.href = this.options[this.selectedIndex].value" name="homeworks"
+                id="wrapper__block-select">
+
+                <option selected='selected' value="#">...</option>
+                <option class="options" title="Diary" value="/homework_1/Diary/index.html"
+                    class="wrapper__block-options">Homework_1
+                </option>
+
+                <option class="options" title="Vizbor" value="/homework_2/Vizbor/vizbor.html"
+                    class="wrapper__block-options">Homework_2
+                </option>
+
+
+                <option class="options" title="Childbook" value="/homework_3/childbook.html"
+                    class="wrapper__block-options">Homework_3
+                </option>
+
+
+            </select>
+
+            <!-- <button title="Diary" class="link">
                 <a target="_blank" href="/homework_1/Diary/index.html">Homework_1</a>
             </button>
             <button title="Vizbor" type='button' class="link">
@@ -138,7 +182,7 @@
 
             <button title="Chidlbook" type='button' class="link">
                 <a target="_blank" href="/homework_3/childbook.html">Homework_3</a>
-            </button>
+            </button> -->
 
 
 
@@ -159,23 +203,38 @@
 
     <script defer>
 
-        var buttons = document.querySelectorAll('.link');
+        var options = document.querySelectorAll('.options');
+        // var select = document.getElementById('wrapper__block-select');
 
-        buttons.forEach(button => {
-            button.addEventListener('click', function (event) {
+
+        options.forEach(option => {
+            option.addEventListener('click', function (event) {
                 var confm = confirm('Хотите перейти на другую страницу?');
-                switch (confm) {
-                    case true:
-                        return true;
-                        break
-                    default:
-                        event.preventDefault();
-                        button.style.border = '1px solid red';
-
+                if (confm == true) {
+                    return true
+                } else {
+                    event.preventDefault();
                 }
-
             })
         })
+
+        // var buttons = document.querySelectorAll('.link');
+
+        // buttons.forEach(button => {
+        //     button.addEventListener('click', function (event) {
+        //         var confm = confirm('Хотите перейти на другую страницу?');
+        //         switch (confm) {
+        //             case true:
+        //                 return true;
+        //                 break
+        //             default:
+        //                 event.preventDefault();
+        //                 button.style.border = '1px solid red';
+
+        //         }
+
+        //     })
+        // })
 
 
     </script>
