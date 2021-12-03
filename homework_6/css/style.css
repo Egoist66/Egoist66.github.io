@@ -1,0 +1,25 @@
+.frame {
+    max-width: 1180px;
+    margin: 0 auto;
+   background-image: url('../img/Right-bottom.gif'), url('../img/right-top.gif'), url('../img/left-bottom.gif'), url('../img/left-top.png'), url('../img/aside.gif'), url('../img/aside.gif'), url('../img/top-bottom.gif'), url('../img/top-bottom.gif') ;
+   background-position: right bottom, right top, left bottom, left top, left center, right center, center bottom, center top;
+   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-y, repeat-y, repeat-x, repeat-x;
+   
+  
+}
+
+.subframe {
+    display: flex;
+    justify-content: center;
+    
+   
+    
+}
+
+
+.text {
+    
+    white-space: pre-line;
+    padding: 30px 10px;
+
+}
