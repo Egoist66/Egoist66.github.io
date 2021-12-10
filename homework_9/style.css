@@ -1,0 +1,12 @@
+.wrapper {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.text {
+	white-space: pre-line;
+	border: 30px solid black;
+	border-image: url('img/ramka.png') 30 round round;
+	
+	padding: 20px;
+}
