@@ -9,13 +9,10 @@
 
 body,
 html {
-    height: 100vh;
+    
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    background-image: url('../img/ball2.png');
-    background-size: 50px, 200px;
-    background-position: right top;
-    background-repeat: repeat-y;
+   
 }
 
 .title {
@@ -42,11 +39,12 @@ html {
 }
 
 .menu {
-    background-color: #F0E78D;
+   
     float: left;
-    height: 100%;
     padding: 20px 20px;
-    min-width: 17%;
+    height: 100vh;
+   
+    
 
 }
 
@@ -90,9 +88,20 @@ li>a:hover {
 
 }
 
+.main__box  {
+    background-color: #F0E78D;
+    min-width: 100px;
+    overflow: hidden;
+}
+
 .content {
-
-
+    
+    background-image: url('../img/ball2.png');
+    background-color: white;
+    margin-left: 210px;
+    background-size: 50px, 200px;
+    background-position: right top;
+    background-repeat: repeat-y;
     padding: 0 20px;
 
 }
@@ -115,6 +124,8 @@ footer {
     font-weight: 700;
     padding: 15px 0;
     text-align: center;
+    position: fixed;
+    bottom: 0;
 }
 
 .footer__text {
@@ -139,3 +150,5 @@ footer {
     right: 0;
     transition: 0.5s all ease-in-out;
 }
+
+
