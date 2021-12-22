@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+html,body {
+    height: auto;
+    min-width: 1180px;
+}
+
+.wrapper {
+    max-width: 1180px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.active.table {
+    animation: table 4s linear infinite running;
+}
+
+.table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 0 auto;
+    cursor: pointer;
+   
+}
+
+   .table  td {
+    height: 50px;
+    width: 60px;
+   
+    border: 1px solid black;
+}
+
+tr:first-child td {
+    
+    background: green  !important;
+    height: 25px  !important;
+    opacity: 0.4;
+
+
+}
+
+tr:last-child td {
+    
+    background: green  !important;
+    height: 25px  !important;
+    opacity: 0.4;
+}
+
+
+.table td:first-of-type, .table td:last-of-type {
+    background: green !important;
+    width: 25px;
+    opacity: 0.4;
+   
+}
+    
+tr:nth-of-type(odd) td:nth-of-type(even) {
+
+    background: black;
+}
+
+tr:nth-of-type(even) td:nth-of-type(odd) {
+
+    background: black;
+ }
+    
+
+ @keyframes table {
+     0% {
+         
+         transform: rotate(0deg);
+     }
+     
+
+     100% {
+         
+         transform: rotate(360deg);
+     }
+ }
+
