@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html,body {
+    height: auto;
+    min-width: 1200px;
+}
+
+
+
+
+
+.wrapper {
+    max-width: 1500px;
+    padding-top: 100px;
+}
+
+
+.wrapper {
+
+    background-image: url('../img/ball3.png'), url('../img/ball3.png'), url('../img/ball3.png'), url('../img/ball3.png'), url('../img/bgball.png'), url('../img/bgball.png'), url('../img/bgball20.png'), url('../img/bgball20.png'), url('../img/pink.png'), url('../img/bg2.png');
+    background-position: right top, right bottom, left top, left bottom, right top, right bottom, 20% top, 20% bottom, right top, 20% top; 
+     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, repeat-y, repeat-y;
+           
+}
+
+.wrapper::after {
+    content: '';
+    clear: both;
+}
