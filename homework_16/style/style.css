@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body,html {
+    height: auto;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+.first__player {
+    margin-bottom: 30px;
+}
+
+.second__player {
+    margin-bottom: 30px;
+}
+
+.third__player {
+    margin-bottom: 30px;
+}
+
+
+.container {
+   
+    padding: 15px;
+   
+}
+
+
+.header>*{
+    margin-bottom: 10px;
+}
+
+
+.header h1 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+p:nth-child(2) {
+    color: #2A952A
+}
+
+p:nth-child(3){
+    color: red;
+}
+
+.header div>a {
+    color: blue;
+}
+
+.header div>a:hover {
+    color: darkorchid;
+    text-decoration: underline 1px solid rgb(160, 65, 65);
+}
+
+p:nth-child(5){
+    color: blue;
+    font-size: 14px;
+    font-style: italic;
+}
+
+p:nth-child(1){
+    color: blue;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.ancor {
+    color: darkorchid;
+}
+
+.ancor:hover {
+    color: darkslateblue;
+    text-decoration: 1px solid underline;
+}
+.ancor::before {
+    content: none;
+}
+
+
+div > a::before {
+    content: '';
+    background-image: url('../img/extref.png');
+    background-repeat: no-repeat;
+    background-position: 2px 8px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+
+@media print {
+    .botvinnik :before {
+    content: "Ссылка ";
+    }
+    .botvinnik:after{
+    content: " на "attr(href)"";
+    }
+
+    .carpov::before {
+        content: 'Ссылка';
+        margin-right: 45px;
+    }
+
+    .carpov::after {
+
+        content: "на  " attr(href)"";
+        
+    }
+
+    .gasparov::before {
+        content: 'Ссылка';
+        margin-right: 40px;
+    }
+
+    .gasparov::after {
+
+        content: "на  " attr(href)"";
+        
+    }
+}
