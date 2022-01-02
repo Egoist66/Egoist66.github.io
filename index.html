@@ -83,7 +83,7 @@
         .santa {
             font-size: 50px;
             font-weight: bold;
-            color: #6db6c7;
+            color: rgb(92, 255, 214);
             animation: santa 3s cubic-bezier(1, 0, 0, 1) 2;
 
         }
@@ -91,16 +91,13 @@
         @keyframes santa {
             0% {
                 transform: scale(0);
-                color: red;
+                color: white;
             }
 
-            50% {
-                color: rgb(72, 230, 190);
-            }
 
             100% {
                 transform: scale(1.7);
-                color: white;
+                color: rgb(92, 255, 214);
 
             }
         }
@@ -319,7 +316,7 @@
 
 
         document.addEventListener('DOMContentLoaded', function () {
-            var congratulation = 'С наступающим Айтишники!'
+            var congratulation = 'С новым годом Айтишники!'
             message.textContent = congratulation + '🥂';
 
         });
