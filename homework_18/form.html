@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form Maket</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+
+        <form action="https://fe.it-academy.by/TestForm.php">
+
+
+            <b>
+                <p>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
+            </b>
+
+            <ul class="form__list">
+
+                <div class='firstBlock'>
+
+                    <label>Название статьи:</label>
+                    <input value="" id="text" name="article" type="text">
+                </div>
+
+                <div class="secondBlock">
+                    <label>Рубрика:</label>
+                    <select name="heading" id="select">
+                        <option value="programming">программирование</option>
+                        <option value="computers">компьютерная техника</option>
+                        <option value="design">графика и дизайн</option>
+
+                    </select>
+
+                </div>
+
+                <div class="third__block">
+
+                    <li>Публикация:</li>
+
+                    <input value="radio_1" type="radio" name="radio" id="I">
+                    <label for="I">на сайте</label>
+                    <br>
+
+
+                    <input value="radio_2" type="radio" name="radio" id="II">
+                    <label for="II">в журнале</label>
+                    <br>
+
+                    <input value="radio_3" type="radio" name="radio" id="III">
+                    <label for="III">на сайте и в журнале</label>
+                    <br>
+
+                </div>
+
+
+
+                <div class="fourth__block">
+
+                    <label for="check">Разрешить комментарии:</label>
+                    <input value="yes" id="check" name="allowComments" type="checkbox">
+
+                </div>
+
+
+                <div class="fifth__block">
+
+                    <label for="area">Текст статьи:</label>
+                    <textarea name="textarea" id="area"></textarea>
+
+
+                </div>
+                <br>
+
+                <div class="button__box">
+
+                    <button style="cursor: pointer;" name="button" value="Отправить" type="submit">Отправить</button>
+
+                </div>
+
+
+            </ul>
+
+
+
+
+        </form>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+
+body,html {
+    height: auto;
+    font-size: 18px;
+    font-family: Arial;
+    
+}
+
+
+.container {
+    max-width: 1180px;
+    padding: 15px;
+    
+}
+
+* {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+form {
+    
+    padding:15px;
+    width: 70%;
+ }
+ 
+.firstBlock {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+ }
+
+ input[type='text']{
+     padding: 4px;
+     box-sizing: border-box;
+     display: block;
+ }
+ 
+.secondBlock {
+    display: flex;
+    justify-content: flex-start;
+ }
+
+ .third__block {
+     display: flex;
+     align-items: center;
+ }
+
+ .third__block li {
+     margin-right: 13.5%;
+ }
+ .third__block input {
+     margin: 0 10px;
+ }
+
+ .fourth__block {
+     display: flex;
+     align-items: center;
+ }
+
+ .fourth__block label {
+     margin-right: 1%;
+ }
+ 
+ 
+#text {
+    width: 70%;
+    margin-left: 9%;
+    margin-bottom: 2px;
+ }
+ 
+#select {
+    margin-left: 18%;
+ }
+
+ .fifth__block {
+     width: 100%;
+ }
+
+ #area {
+     width: 100%;
+     padding: 10px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 1rem;
+     
+     
+ }
+
+ label {
+     cursor: pointer;
+ }
+
+ .fifth__block label {
+     margin-bottom: 7px;
+     display: block;
+ }
+
+ 
+
+ .button__box button {
+    padding: 4px 25px;
+    border: 1px solid skyblue;
+    background: transparent;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5s all ease;
+}
+
+.button__box button:hover {
+    background-color: skyblue;
+    color: white;
+    transition: 0.5s all ease;
+}
+
+.button__box button:active {
+    transform: scale(1.099);
+    transition: 0.5s all ease;
+}
+
+
+ 
+@media(max-width:1202px){
+    .firstBlock {
+       display: flex;
+       flex-direction:column;
+       
+    }
+
+   * {
+       font-size: 0.8rem;
+   }
+    
+    
+    
+    .secondBlock {
+       display: flex;
+       flex-direction:column;
+       width: 70%;
+    }
+    
+    #text {
+       margin-left: 0px;
+    }
+    
+    #select {
+       margin-left: 0px;
+    }
+}
+
+@media(max-width:863px){
+
+        .third__block {
+            display: block;
+            margin-top: 7px;
+            
+        }
+        
+       .third__block input {
+           margin: 0;
+       }
+
+       .third__block span {
+        margin: 0;
+    }
+
+    .fourth__block {
+        margin: 7px 0;
+    }
+}
