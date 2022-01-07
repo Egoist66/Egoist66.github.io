@@ -18,10 +18,14 @@ var regButton = $('.EnterClub');
 regButton.click(function (e) {
     switch (confirm('Вы подтверждаете?')) {
         case true:
-            alert('Вы зарегистрированы');
+            regButton.text('Зарегистрирован');
             break;
         default:
-            alert('Отмена регистрации');
+            regButton.text('Отмена');
+            function setTime() {
+                regButton.html('вступить <br> в клуб')
+            }
+            setTimeout(setTime, 1000);
             e.preventDefault();
 
     }
