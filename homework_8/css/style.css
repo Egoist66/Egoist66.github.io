@@ -30,6 +30,46 @@ html {
 
 }
 
+
+.Content-title {
+    position: relative;
+}
+
+
+
+form {
+    position: fixed;
+    left: 85%;
+    top: 0;
+    
+}
+
+button {
+    cursor: pointer;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.EnterClub {
+   
+    background-color: #90EE90;
+    border: 1px transparent;
+    padding: 11.5px 20px;
+    text-transform: uppercase;
+    text-decoration: 1px solid underline;
+    transition: 0.3s all ease;
+   
+}
+
+.EnterClub:hover {
+    background-color: #70ff70;
+    transition: 0.3s all ease;
+}
+
 .sports {
     cursor: pointer;
 }
@@ -103,6 +143,7 @@ li>a:hover {
     background-position: right top;
     background-repeat: repeat-y;
     padding: 0 20px;
+    height: 1000px;
 
 }
 
