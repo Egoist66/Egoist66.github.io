@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1180">
+    <title>MakeStar</title>
+
+    <style>
+        body,
+        html {
+            min-width: 1180px;
+            font-family: Arial;
+        }
+
+        .text__list li {
+            margin: 15px 0;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        .links {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .wrapper {
+            max-width: 1180px;
+            margin: 100px auto;
+        }
+
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .img__box {
+            float: left;
+        }
+
+        .text__list {
+            margin-left: 38%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper clearfix">
+
+        <div class="img__box">
+
+            <img src="img/flag.png" alt="flag">
+
+        </div>
+
+        <ol class="text__list">
+
+            <li>
+                <span>
+                    Данное изображения можно реализовать через написание <b>svg</b> объектов вложенных друг в друга
+                </span>
+            </li>
+            <li>
+
+                <span>
+                    Данное изображения можно реализовать через создание <b>svg</b> объектов используя соответствующий
+                    софт
+                    проектирующий <b>svg</b> формы (наиболее удобный способ)
+                </span>
+
+            </li>
+            <li>
+
+                <span>
+                    Данное изображения можно так же реализовать через использование соответсвующих CSS свойств касаемо
+                    границ блочных объектов и их манипуляции
+                </span>
+
+            </li>
+
+            <li>
+
+                <span>
+                    Можно так же использовать графический редактор (photoshop) или аналоги создав данные объекты
+                    вкладывая один слой
+                    в другой
+
+                    <a class="links" href="https://psdetch.com/">PSDETCH</a>
+
+                    <a class="links" href="https://www.photopea.com/">Photopea</a>
+                </span>
+
+            </li>
+
+            <li>
+
+                <span>
+                    Используя svg формат или обычные растровые объекты можно воспользоваться свойством position для их
+                    правильного расставление внутри блока.
+                </span>
+
+            </li>
+
+            <li>
+
+                <span>
+                    И так можно воспользоваться свойством clip-path для обрезки тех или иных картинок чтобы добиться
+                    необходимой формы (для удобства так же есть онлайн-инструменты )
+                    <a href="https://bennettfeely.com/clippy/">Смотреть</a>
+                </span>
+
+            </li>
+
+
+        </ol>
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
