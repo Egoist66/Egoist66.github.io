@@ -1,0 +1,144 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body,html {
+   height: auto;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.header {
+    background-color: #AED9E7;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 24px;
+    color: blue;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.main__wrapper {
+    display: flex;
+   
+   
+}
+
+.sidebar {
+    background-color: yellow;
+    width: 210px;
+    padding: 20px;
+    height: 100%;
+   
+  
+  
+}
+
+.active.sidebar__list {
+    left: 0%;
+    transition: 0.5s all ease-in-out;
+}
+
+.sidebar__list{
+    position: relative;
+    left: -120%;
+    transition: 0.5s all ease-in-out;
+}
+
+.sidebar__list2 {
+    position: relative;
+    left: 0;
+    right: 0;
+
+}
+
+.second__title {
+
+    margin-top: 60px;
+    margin-left: -3.7%;
+}
+
+.sidebar__list li {
+    margin: 12px 0;
+
+    
+}
+
+.second__list__box {
+    display: none;
+   
+}
+
+.sidebar__list-links {
+    color: black;
+}
+
+.sidebar__list-links:hover {
+    color: rgb(6, 112, 251);
+    text-decoration: underline 1px rgb(47, 47, 47) solid;
+}
+
+.content {
+   
+    width: 100%;
+    padding: 30px;
+    height: 1000px;
+    
+    
+    
+}
+
+.main__wrapper {
+    background: url('../img/ball2.png');
+    background-size: 50px, 200px;
+    background-position: right top;
+    background-repeat: repeat-y;
+   
+}
+
+.footer {
+    position: fixed;
+    z-index: 1;
+    background-color: #AED9E7;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+   
+}
+
+.footer_text {
+    padding: 20px;
+    font-size: 24px;
+    color: blue;
+    font-weight: bold;
+}
+
+.flex__content {
+    display: flex;
+    
+}
+
+.img__box {
+    margin-right: 25px;
+}
+
+.box-text {
+    font-size: 16px;
+    line-height: 1.5;
+}
+

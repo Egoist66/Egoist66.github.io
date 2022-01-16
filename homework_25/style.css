@@ -1,0 +1,22 @@
+.icon {
+    fill: red;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.3s all ease;
+   
+}
+
+.icon:hover {
+    fill: green;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.3s all ease;
+   
+}
+
+
+.wrapper {
+    width: 1140px;
+    margin: 20% auto 0% auto;
+    text-align: center;
+}
