@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.active.body {
+    background-color: rgb(39, 39, 39);
+    transition: 0.5s all ease;
+}
+
+body,html {
+    font-size: 24px;
+    font-family: Arial;
+    overflow-x: hidden;
+    transition: 0.5s all ease;
+}
+
+.checkbox_box {
+    transform: scale(2.5);
+}
+
+#check {
+ 
+  position: relative;
+  margin-left: 25px;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 20% auto;
+    text-align: center;
+}
+
+label {
+    color: #FFDA40;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+#check::after {
+    content: '😀 ';
+    visibility: visible;
+    position: absolute;
+    left: 8px;
+    bottom: -1px;
+    transform: scale(2.5);
+  
+    
+    
+}
+
+#check:checked::after {
+    content: '😔 ';
+    visibility: visible;
+    position: absolute;
+    left: 8px;
+    bottom: -1px;
+    transform: scale(2.5);
+}
+
+#check:checked ~ label {
+    color: red;
+}
+
+label::after {
+    content: 'I am happy';
+}
+
+#check:checked ~ label::after {
+   content: 'I am sad';
+   
+}
+
+
+ 
