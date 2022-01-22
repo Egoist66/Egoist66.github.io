@@ -100,8 +100,39 @@ body, html {
     background-position: right bottom; }
 
 .sixth__section {
-  height: 900px;
-  width: 100%; }
+  height: auto;
+  width: 100%;
+  margin-bottom: 120px; }
+
+.seventh__section {
+  width: 100%;
+  height: auto;
+  background: url("../img/enginebg.png") no-repeat right top, url("../img/engineinside.png") no-repeat left bottom;
+  background-color: #F2F2F2;
+  padding-bottom: 90px; }
+
+.footer__section {
+  width: 100%;
+  height: auto;
+  background-color: #121018;
+  padding-bottom: 90px; }
+
+.isShownBtn {
+  opacity: 0;
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  z-index: 100; }
+  .isShownBtn_hide {
+    opacity: 1; }
+
+.arrowicon:active {
+  color: skyblue; }
+
+.arrowicon {
+  font-size: 70px;
+  color: #0b79a5;
+  font-weight: bold; }
 
 .header__topnavigation {
   width: 100%;
@@ -648,3 +679,156 @@ body, html {
     background-color: #78808F;
     top: 10px;
     left: -20px; }
+
+.seventh h2 {
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 50px; }
+
+.chooseCarForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.first__formBox {
+  margin-right: 35px; }
+  .first__formBox input {
+    background: rgba(18, 17, 39, 0.04);
+    border-radius: 6px;
+    color: black;
+    width: 570px;
+    padding: 10px;
+    border: 1px solid #8890A0;
+    margin-bottom: 30px; }
+    .first__formBox input:focus {
+      border: 1px solid chocolate; }
+
+.first__formBox-subbox {
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  width: 105%;
+  grid-gap: 0px; }
+  .first__formBox-subbox input {
+    width: 270px; }
+
+.second__formBox {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+  .second__formBox input {
+    display: block; }
+    .second__formBox input:focus {
+      border: 1px solid chocolate; }
+  .second__formBox .person_name {
+    width: 270px;
+    background: rgba(18, 17, 39, 0.04);
+    border-radius: 6px;
+    border: 1px solid #8890A0;
+    color: black;
+    padding: 10px; }
+  .second__formBox .person_number {
+    width: 270px;
+    background: rgba(18, 17, 39, 0.04);
+    border-radius: 6px;
+    border: 1px solid #8890A0;
+    color: black;
+    padding: 10px; }
+  .second__formBox .comments {
+    width: 555px;
+    background: rgba(18, 17, 39, 0.04);
+    border-radius: 6px;
+    border: 1px solid #8890A0;
+    color: black;
+    padding: 10px;
+    margin-bottom: 30px; }
+
+.personblock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5.4%; }
+  .personblock .person_name {
+    margin-right: 15px; }
+
+.comments {
+  margin-bottom: 10px; }
+
+.policybox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .policybox p {
+    color: #8890A0;
+    font-size: 12px; }
+
+.agree__button {
+  background: transparent;
+  background: #3874CB;
+  padding: 0px;
+  border-radius: 5px;
+  font-size: 12px; }
+  .agree__button span {
+    padding: 13px 9px;
+    font-size: 11px;
+    display: inline-block; }
+
+.eighth p, .eighth h2 {
+  color: white;
+  text-transform: uppercase; }
+
+.footer__contact-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.footer_infobox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.sociallinks {
+  font-size: 20px;
+  color: #599cff;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease; }
+
+.sociallinks:hover {
+  color: #084eb6;
+  cursor: pointer;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease; }
+
+.soial-answerbox {
+  margin-left: 40px; }
+
+.commonmarginsocial p {
+  margin: 15px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.footernumber {
+  color: #4879c2; }
+
+.socialsbox span {
+  display: inline-block;
+  margin: 0 10px; }
+
+.googlemap {
+  border-radius: 5px; }
