@@ -390,8 +390,14 @@ body, html {
   text-align: center; }
 
 .cardsbutton {
-  background: -webkit-gradient(linear, left top, left bottom, from(#AF0C27), to(#7C0115));
-  background: linear-gradient(180deg, #AF0C27 0%, #7C0115 100%); }
+  background-color: #9b0921;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease; }
+
+.cardsbutton:hover {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  background-color: #c51e39; }
 
 .cardsbottom__text {
   color: #78808F;
@@ -403,7 +409,8 @@ body, html {
 .third__sectionbox {
   display: grid;
   width: 100%;
-  grid-template-rows: repeat(2, 340px);
+  grid-template-rows: minmax(-webkit-min-content, 340px) minmax(-webkit-min-content, 340px);
+  grid-template-rows: minmax(min-content, 340px) minmax(min-content, 340px);
   grid-template-columns: repeat(3, 250px);
   grid-gap: 20px;
   height: 100%; }
@@ -480,10 +487,12 @@ body, html {
       justify-content: space-around;
   margin-top: 50px; }
 
-.steptextbox {
+.steptextbox p {
   color: #78808F;
   text-align: center;
-  line-height: 1.5; }
+  line-height: 1.5;
+  width: 290px;
+  min-height: 90px; }
 
 .fifth h2 {
   color: white; }
@@ -770,7 +779,7 @@ body, html {
 
 .agree__button {
   background: transparent;
-  background: #3874CB;
+  background-color: #3874CB;
   padding: 0px;
   border-radius: 5px;
   font-size: 12px; }
@@ -778,6 +787,9 @@ body, html {
     padding: 13px 9px;
     font-size: 11px;
     display: inline-block; }
+
+.agree__button:hover {
+  background-color: #568fe6; }
 
 .eighth p, .eighth h2 {
   color: white;

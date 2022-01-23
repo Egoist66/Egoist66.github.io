@@ -21,7 +21,7 @@ arrowspan.addEventListener('click', function (event) {
 
 
 window.onscroll = () => {
-    if (window.scrollY > 400) {
+    if (window.scrollY > 600) {
         arrow.classList.add('isShownBtn_hide');
 
     } else {
