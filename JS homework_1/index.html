@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1160">
+    <title>Anketa</title>
+</head>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    html,
+    body {
+        font-family: Arial;
+        background-color: wheat;
+        min-width: 1160px;
+    }
+
+    .sendData {
+        width: 200px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid black;
+        background-color: white;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .sendData:hover {
+        background-color: skyblue;
+    }
+
+    .disabled {
+        border: 1px solid red;
+    }
+
+    .wrapper {
+        max-width: 1160px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    input {
+        min-width: 300px;
+        display: block;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 10px 0;
+
+    }
+
+    label {
+
+        margin-right: 20px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+
+
+    <div class="wrapper">
+
+
+        <h1>Анкета для заполнения</h1>
+
+        <form method="post" action="https://fe.it-academy.by/TestForm.php" class="form">
+
+
+            <div>
+
+                <label for="sex">Ваш пол:</label><input id="sex" value="" name="sex" type="text">
+                <label for="name">Ваше ФИО:</label><input id="name" value="" name="name" type="text">
+                <label for="age">Ваш возраст:</label><input id="age" value="" name="age" type="text">
+                <label for="days_age">Ваш возраст в днях:</label><input value="" id="days_age" name="days_age"
+                    type="text">
+                <label for="future_age">Через 5 лет вам будет:</label><input value="" id="future_age" name="future_age"
+                    type="text">
+                <label for="is_pensioner">Вы на пенсии?:</label><input value="" id="is_pensioner" name="is_pensioner"
+                    type="text">
+
+                <button type="submit" class="sendData">Отправить данные</button>
+                <button type="reset" class="sendData reset">Очистить форму</button>
+
+            </div>
+
+
+
+
+
+        </form>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script defer src="js/script.js"></script>
+</body>
+
+</html>
