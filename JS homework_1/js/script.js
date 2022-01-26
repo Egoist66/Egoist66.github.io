@@ -73,18 +73,18 @@ inputs.forEach(input => {
 reset.addEventListener('click', function () {
 
 
-    for (i = 0; i < inputs.length; i++) {
-        inputs[i].value = ''
+    inputs.forEach(input => {
+        input.value = ''
 
 
-        if (inputs[i].value == '') {
-            inputs[i].disabled = false;
-            inputs[i].classList.remove('disabled');
+        if (input.value == '') {
+            input.disabled = false;
+            input.classList.remove('disabled');
 
             return;
         }
-    }
-})
+    });
+});
 
 
 // inputs.forEach(input => {
