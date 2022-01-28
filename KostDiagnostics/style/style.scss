@@ -4,6 +4,7 @@
 // @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800);
 @import url(keyframe.css);
+@import url(media.css);
 
 // vars
 
@@ -25,6 +26,7 @@ $Flex: flex;
 
 body,html {
     font-family: $MainFont;
+    overflow-x: hidden;
    
 
 }
@@ -34,6 +36,28 @@ body,html {
     padding: 30px 0px;
    
     
+}
+
+
+
+.menu__burger {
+   display: none;
+   position: relative;
+   cursor: pointer;
+   top: 20px;
+   left: 30px;
+   width: 200px;
+  
+    
+    & span {
+        
+        width: 20px;
+        height: 1px;
+        background-color: white;
+        display: block;
+        margin-bottom: 5px;
+        cursor: pointer;
+    }
 }
 
 .container {
@@ -183,11 +207,13 @@ body,html {
     bottom: 100px;
     right: 50px;
     z-index: 100;
+    transition: 0.3s all ease;
     
 
 
     &_hide {
         opacity: 1;
+        transition: 0.3s all ease;
     }
 }
 
