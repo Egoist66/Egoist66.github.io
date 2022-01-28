@@ -32,7 +32,7 @@ inputs.forEach(input => {
             var age = parseInt(prompt('Ваш возраст?'));
             input.value = 'Ваш возраст' + ' ' + age;
         } else if (input.id == 'days_age') {
-            var days_age = parseInt(prompt('Ваш возраст в днях?'));
+            var days_age = parseInt(prompt('Ваш возраст в днях?, https://allcalc.ru/converter/years-days'));
             input.value = 'Ваш возраст в днях' + ' ' + days_age;
         } else if (input.id == 'future_age') {
             var future_age = parseInt(prompt('Через 5 лет вам будет?'));
