@@ -77,6 +77,7 @@ reset.addEventListener('click', function () {
         input.value = ''
 
 
+
         if (input.value == '') {
             input.disabled = false;
             input.classList.remove('disabled');
@@ -84,6 +85,8 @@ reset.addEventListener('click', function () {
             return;
         }
     });
+
+    alert('Форма очищена');
 });
 
 
