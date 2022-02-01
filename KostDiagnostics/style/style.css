@@ -15,19 +15,47 @@ body, html {
   width: 100%;
   padding: 30px 0px; }
 
+.active.menu__burger {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease; }
+
+.active.menu__burger span:nth-child(2) {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  opacity: 0; }
+
+.menu__burger span:nth-child(1) {
+  top: 0px;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease; }
+
+.active.menu__burger span:nth-child(1) {
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+  top: 7px; }
+
 .menu__burger {
   display: none;
   position: relative;
   cursor: pointer;
   top: 20px;
   left: 30px;
-  width: 200px; }
+  width: 20px;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease; }
   .menu__burger span {
+    position: relative;
     width: 20px;
     height: 1px;
     background-color: white;
     display: block;
     margin-bottom: 5px;
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
     cursor: pointer; }
 
 .container {

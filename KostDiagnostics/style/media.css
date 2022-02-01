@@ -69,11 +69,53 @@
 @media(max-width:695px){
 
     .header__bottomnavigation {
+        display: block;
         display: none;
+    }
+
+    .header__bottomnavigation ul {
+        display: block;
+       
+        padding: 15px;
+    }
+    
+    .header__bottomnavigation ul li {
+        margin: 15px 0;
+    }
+
+    .header__bottomnavigation-logo {
+        text-align: center;
+    }
+
+    .header__bottomnavigation-logo img {
+        width: 120px;
     }
     
     .header__topnavigation {
+        display: block;
         display: none;
+        text-align: center;
+        
+    }
+
+    .buttonform {
+       
+        width: 88%;
+        
+    }
+    
+    .header__topnavigation-list li {
+        margin: 15px 0px;
+    }
+    
+    .header__topnavigation-list {
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .header__topnavigation-list li:nth-child(1) {
+        margin:  0 auto;
     }
 
     .first__section-infobox {
@@ -85,7 +127,7 @@
     }
 
     .menu__burger {
-        display: block;
+        display: inline-block;
         position: relative;
         cursor: pointer;
         top: 20px;
@@ -102,7 +144,87 @@
              cursor: pointer;
          
         }
-     }
+}
+
+@media(max-width:591px){
+    .buttonform {
+       
+        width: 85%;
+        
+    }
+}
+
+@media(max-width:512px){
+    .buttonform {
+       
+        width: 80%;
+        
+    }
+    
+    .buttonform button {
+        padding: 7px 12px;
+    }
+}
+
+@media(max-width:431px){
+    .buttonform {
+       
+        width: 73%;
+        
+    }
+    
+    .buttonform button {
+        padding: 7px 12px;
+    }
+}
+
+@media(max-width:338px){
+    .buttonform {
+       
+        width: 68%;
+        
+        
+    }
+    
+    .buttonform button {
+        padding: 7px 12px;
+        font-size: 12px;
+    }
+
+    .buttonform button span {
+       
+        font-size: 8px;
+    }
+}
+
+@media(max-width:300px){
+    .buttonform {
+       
+        width: 60%;
+        
+        
+        
+    }
+    
+    .buttonform button {
+        padding: 7px 12px;
+        font-size: 12px;
+    }
+
+    .buttonform button span {
+       
+        font-size: 8px;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 

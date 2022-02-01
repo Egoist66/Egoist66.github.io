@@ -9,6 +9,25 @@ var links = document.querySelectorAll('.header__topnavigationlist-links');
 
 
 
+var headerElements =
+    [$('.menu__burger'), $('.header__topnavigation'), $('.header__bottomnavigation')];
+
+var navigationElements = [$('.header__topnavigation'), $('.header__bottomnavigation')];
+
+headerElements[0].click(function () {
+    headerElements[0].toggleClass('active');
+
+    for (i = 0; i < navigationElements.length; i++) {
+        navigationElements[i].slideToggle(500);
+    }
+
+})
+
+
+
+
+
+
 
 arrowspan.addEventListener('click', function (event) {
     event.preventDefault();

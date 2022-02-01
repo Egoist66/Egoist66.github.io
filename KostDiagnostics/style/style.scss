@@ -38,6 +38,31 @@ body,html {
     
 }
 
+.active.menu__burger {
+    transform: (rotate(360deg));
+    transition: 0.5s all ease;
+}
+
+.active.menu__burger span:nth-child(2) {
+    transform: (rotate(360deg));
+    transition: 0.5s all ease;
+    opacity: 0;
+}
+
+.menu__burger span:nth-child(1) {
+    top: 0px;
+    transition: 1s all ease;
+}
+
+.active.menu__burger span:nth-child(1) {
+
+    
+    transition: 1s all ease;
+    top: 7px;
+   
+    
+}
+
 
 
 .menu__burger {
@@ -46,16 +71,18 @@ body,html {
    cursor: pointer;
    top: 20px;
    left: 30px;
-   width: 200px;
+   width: 20px;
+   transition: 0.5s all ease;
   
     
     & span {
-        
+        position: relative;
         width: 20px;
         height: 1px;
         background-color: white;
         display: block;
         margin-bottom: 5px;
+        transition: 0.5s all ease;
         cursor: pointer;
     }
 }
