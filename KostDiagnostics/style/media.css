@@ -197,6 +197,12 @@
     }
 }
 
+@media(max-width:372px){
+    .first__sectionCar {
+        background-position: bottom center;
+    }
+}
+
 @media(max-width:300px){
     .buttonform {
        
@@ -599,6 +605,111 @@
         width: 250px;
     }
 }
+
+
+/* forms */
+
+@media(max-width:1165px){
+    .chooseCarForm {
+        display: block;
+        margin: 0 auto;
+        width: 1000px;
+        padding: 0px 10px;
+    }
+
+    .first__formBox-subbox {
+        width: 51%;
+        display: block;
+    }
+
+    .policybox {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .policybox p {
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:589px){
+
+    .first__formBox .cartype {
+        width: 400px;
+    }
+
+    .second__formBox .comments {
+        width: 400px;
+    }
+}
+
+@media(max-width:576px){
+
+    .personblock {
+        flex-direction: column;
+    }
+
+    .personblock input {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:415px){
+
+    .first__formBox .cartype {
+        width: 270px;
+    }
+
+    .second__formBox .comments {
+        width: 270px;
+    }
+}
+
+@media(max-width:995px){
+
+    .googlemap {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media(max-width:995px){
+
+    .googlemap {
+        width: 400px;
+        height: 400px;
+        margin-bottom: 25px;
+    }
+    .footer__contact-box {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width:417px){
+
+    .googlemap {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 25px;
+    }
+    
+}
+
+@media(max-width:402px){
+
+    .footer_infobox p {
+        font-size: 10px;
+    }
+    
+}
+
+
+
+
+
+
 
 
 
