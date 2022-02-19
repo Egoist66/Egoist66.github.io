@@ -16,18 +16,21 @@ document.addEventListener('DOMContentLoaded', function (){
 
 
 
-
     heart.addEventListener('click', (event) => {
         event.preventDefault();
-        var personName = prompt('What is name of person you like?');
-        var PersonLastName = prompt('What is the last name of this one?');
-        if(personName === 'Marina' && PersonLastName === 'Yegorova'){
+
+
+      let person = {
+        name: prompt('What is name of person you like?').trim(),
+        lastName:  prompt('What is the last name of this one?').trim(),
+      }
+
+        if(person.name === 'Ksenia' && person.lastName === 'Uvarovskaya'){
             alert("Let's see if this girl can start the Heart");
             heart.classList.toggle('active');
             valentine.textContent = "It's beating";
             body.classList.add('active');
-            title.textContent = 'It seems Marina is the One you need' + ' ' + '💞';
-
+            title.textContent = 'It seems Ksenia is the One you need' + ' ' + '💞';
 
 
         }else {
@@ -35,6 +38,16 @@ document.addEventListener('DOMContentLoaded', function (){
             body.classList.remove('active');
             title.textContent = 'You have chosen wrong Girl, so go Fuck yourself' + ' ' +  '😡';
 
+
         }
+
+        console.log(person);
+
+
+
+
     })
+
+
+
 })
