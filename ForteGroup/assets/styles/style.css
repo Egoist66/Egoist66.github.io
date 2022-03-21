@@ -194,5 +194,6 @@ input::-webkit-input-placeholder { color: #687D8D !important; }
 
 .map-wrapper { overflow: hidden; }
 
-.map_frame { height: 290px; width: 520px; -webkit-transition: 0.4s all ease; transition: 0.4s all ease; }
-.map_frame:hover { height: 820px; -webkit-transition: 0.4s all ease; transition: 0.4s all ease; }
+.map_frame { height: 290px; width: 660px; -webkit-transition: 0.5s all ease-in-out; transition: 0.5s all ease-in-out; }
+
+.active.map_frame { height: 820px; -webkit-transition: 0.5s all ease-in-out; transition: 0.5s all ease-in-out; }

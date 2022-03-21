@@ -853,11 +853,12 @@ input::-webkit-input-placeholder {
 
 .map_frame {
     height: 290px;
-    width: 520px;
-    transition: 0.4s all ease;
+    width: 660px;
+    transition: 0.5s all ease-in-out;
 
-    &:hover {
-        height: 820px;
-        transition: 0.4s all ease;
-    }
+}
+
+.active.map_frame {
+    height: 820px;
+    transition: 0.5s all ease-in-out;
 }

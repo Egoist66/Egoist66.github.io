@@ -61,6 +61,7 @@ navigation.append(menu_burger);
 // Jquery Module
 
 let isShownBtn = $('.isShownBtn')
+let map_frame = $('.map_frame ');
 
 isShownBtn.on("click", "a", function (e) {
     e.preventDefault();
@@ -77,3 +78,6 @@ $(window).scroll(function () {
 
 });
 
+map_frame.hover(function () {
+    map_frame.toggleClass('active');
+});
