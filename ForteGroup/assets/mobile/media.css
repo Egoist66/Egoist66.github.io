@@ -160,3 +160,24 @@
         font-size: 30px !important;
     }
 }
+
+
+/* for wide screens */
+
+@media(min-width:1800px){
+    .map_frame {
+        width: 700px !important;
+    }
+
+    .locations__country-emailLink {
+        font-size: 18px !important;
+    }
+}
+
+/* @media(min-width:1920px){
+   .container {
+       max-width: 1890px !important;
+      
+
+   }
+} */

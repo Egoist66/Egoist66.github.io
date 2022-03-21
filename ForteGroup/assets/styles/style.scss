@@ -162,7 +162,7 @@ header {
     .main-form_title {
         font-family: 'Acumin Pro';
         font-weight: 900;
-        font-size: 54px;
+        font-size: 46px;
         padding-bottom: 30px;
       
     }
@@ -170,7 +170,7 @@ header {
     .main-form_text {
         font-family: 'Acumin Pro';
         font-weight: 400;
-        font-size: 24px;
+        font-size: 20px;
     }
 }
 
@@ -480,7 +480,7 @@ input::-webkit-input-placeholder {
 .locations__country-emailLink {
     font-weight: 300;
     font-family: 'Noto Sans';
-    font-size: 18px;
+    font-size: 16px;
     color: black;
     text-decoration: underline 1px solid black;
 }
@@ -551,12 +551,12 @@ input::-webkit-input-placeholder {
 
 
 .banner {
-    width: 1140px;
+    width: 1080px;
     margin: 0 auto;
     min-height: 258px;
     background:  $gradient, url('../images/banner.png') no-repeat;
     background-size: cover;
-    border-radius: 22px;
+    border-radius: 23px;
     transform: translateY(130px);
     
 
@@ -847,13 +847,10 @@ input::-webkit-input-placeholder {
 
 // map
 
-.map-wrapper {
-    overflow: hidden;
-}
 
-.map_frame {
+.map_frame { 
     height: 290px;
-    width: 660px;
+    width: 560px;
     transition: 0.5s all ease-in-out;
 
 }

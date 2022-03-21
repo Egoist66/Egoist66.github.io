@@ -31,8 +31,8 @@ header { width: 100%; padding: 30px 0px; margin-bottom: 151px; }
 .main-form_wrapper { margin-bottom: 21px; }
 
 .main-form__descrbox { color: white; text-align: center; margin-bottom: 104px; }
-.main-form__descrbox .main-form_title { font-family: 'Acumin Pro'; font-weight: 900; font-size: 54px; padding-bottom: 30px; }
-.main-form__descrbox .main-form_text { font-family: 'Acumin Pro'; font-weight: 400; font-size: 24px; }
+.main-form__descrbox .main-form_title { font-family: 'Acumin Pro'; font-weight: 900; font-size: 46px; padding-bottom: 30px; }
+.main-form__descrbox .main-form_text { font-family: 'Acumin Pro'; font-weight: 400; font-size: 20px; }
 
 .form-inputsBox { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 50px; }
 .form-inputsBox .form-inputs { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
@@ -108,7 +108,7 @@ input::-webkit-input-placeholder { color: #687D8D !important; }
 
 .locations__country::after { content: ''; display: block; clear: both; }
 
-.locations__country-emailLink { font-weight: 300; font-family: 'Noto Sans'; font-size: 18px; color: black; -webkit-text-decoration: underline 1px solid black; text-decoration: underline 1px solid black; }
+.locations__country-emailLink { font-weight: 300; font-family: 'Noto Sans'; font-size: 16px; color: black; -webkit-text-decoration: underline 1px solid black; text-decoration: underline 1px solid black; }
 
 .locations__countries-box { padding-bottom: 86px; }
 
@@ -134,7 +134,7 @@ input::-webkit-input-placeholder { color: #687D8D !important; }
 
 .Belarus_box, .Ukraine_box, .Poland_box, .Colombia_box { padding-bottom: 0px; }
 
-.banner { width: 1140px; margin: 0 auto; min-height: 258px; background: linear-gradient(49.57deg, rgba(7, 242, 219, 0.7) 7.57%, rgba(255, 225, 68, 0.7) 93.53%), url("../images/banner.png") no-repeat; background-size: cover; border-radius: 22px; -webkit-transform: translateY(130px); transform: translateY(130px); }
+.banner { width: 1080px; margin: 0 auto; min-height: 258px; background: linear-gradient(49.57deg, rgba(7, 242, 219, 0.7) 7.57%, rgba(255, 225, 68, 0.7) 93.53%), url("../images/banner.png") no-repeat; background-size: cover; border-radius: 23px; -webkit-transform: translateY(130px); transform: translateY(130px); }
 .banner p { font-family: 'Acumin Pro'; font-weight: 900; font-size: 30px; color: #fff; padding: 70px; letter-spacing: 1px; text-align: center; }
 
 .banner__linkBox { text-align: center; padding-bottom: 80px; }
@@ -192,8 +192,6 @@ input::-webkit-input-placeholder { color: #687D8D !important; }
 
 .menu-burger_img { width: 40px; height: 20px; }
 
-.map-wrapper { overflow: hidden; }
-
-.map_frame { height: 290px; width: 660px; -webkit-transition: 0.5s all ease-in-out; transition: 0.5s all ease-in-out; }
+.map_frame { height: 290px; width: 560px; -webkit-transition: 0.5s all ease-in-out; transition: 0.5s all ease-in-out; }
 
 .active.map_frame { height: 820px; -webkit-transition: 0.5s all ease-in-out; transition: 0.5s all ease-in-out; }
