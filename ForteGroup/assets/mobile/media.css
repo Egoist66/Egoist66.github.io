@@ -134,8 +134,8 @@
     }
 
     .welcome-section {
-        
-        background:  url('../images/layer3.png') no-repeat -730px 150px, url('../images/mediaBG.png') fixed  no-repeat !important;
+
+        background:  url('../images/layer3.png') no-repeat -730px 150px, url('../images/mediaBG.png') center fixed  no-repeat !important;
         background-color: #031D31 !important;
         background-size: cover !important;
     }

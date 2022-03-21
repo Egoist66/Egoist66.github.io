@@ -7,7 +7,7 @@
 
 // Variables
 
-$container: 1290px;
+$container: 1590px;
 $colors:  #031D31, #0C1923, #07F2DB, #ffff, #687D8D;
 $gradient: linear-gradient(49.57deg, rgba(7, 242, 219, 0.7) 7.57%, rgba(255, 225, 68, 0.7) 93.53%);
 
@@ -71,6 +71,7 @@ header {
 
 .container {
     max-width: $container;
+    padding: 0 40px;
     margin: 0 auto;
    
 }
@@ -98,10 +99,10 @@ header {
 
 
     &-button {
-        width: 224px;
+        width: 200px;
         background-color: #07F2DB;
         font-weight: 600;
-        font-size: 18px;
+        font-size: 16px;
         letter-spacing: 3px;
         color: #0C1923;
         text-transform: uppercase;
@@ -131,7 +132,7 @@ header {
     &-links {
         color: nth($colors, 4);
         font-weight: 300;
-        font-size: 18px;
+        font-size: 16px;
         transition: 0.3s all ease-in-out;
 
         &:hover {
@@ -192,7 +193,7 @@ header {
             background: transparent;
             border: none;
             color: white;
-            font-size: 20px;
+            font-size: 16px;
             font-weight: 300;
             border-bottom: 1px solid #fff;
             width: 500px;
@@ -227,7 +228,7 @@ input::-webkit-input-placeholder {
     width: 100%;
     background: transparent;
     border: none;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
     padding: 20px;
     color: white;
@@ -271,7 +272,8 @@ input::-webkit-input-placeholder {
 .forms-inputs_disabled {
     border-bottom: 1px solid #fff;
     padding: 20px;
-    min-height: 64px;
+    min-height: 59px;
+  
 }
 
 .agreement-block {
@@ -290,7 +292,7 @@ input::-webkit-input-placeholder {
 
     & label {
         font-weight: 300;
-        font-size: 18px;
+        font-size: 16px;
         display: inline-block;
         line-height: 1.5;
         position: relative;
@@ -355,14 +357,14 @@ input::-webkit-input-placeholder {
     & button {
 
         background-color: #07F2DB;
-        width: 293px;
+        width: 260px;
         padding: 20px;
         font-weight: 600;
         letter-spacing: 3px;
         border: none;
         border-radius: 4px;
         color: #0C1923;
-        font-size: 18px;
+        font-size: 16px;
         text-transform: uppercase;
         transition: 0.2s all ease;
         
@@ -373,7 +375,7 @@ input::-webkit-input-placeholder {
         }
 
         &:active {
-            width: 260px;
+            width: 240px;
         }
     }
 }
@@ -434,14 +436,14 @@ input::-webkit-input-placeholder {
 
     font-family: 'Acumin Pro';
     font-weight: 900;
-    font-size: 36px;
+    font-size: 30px;
     color: #031D31;
     padding-bottom: 36px;
 }
 
 .locations__subtitle {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     color: #031D31;
     padding-bottom: 41px;
 }
@@ -549,18 +551,19 @@ input::-webkit-input-placeholder {
 
 
 .banner {
-    width: 100%;
+    width: 1140px;
+    margin: 0 auto;
     min-height: 258px;
     background:  $gradient, url('../images/banner.png') no-repeat;
     background-size: cover;
-    border-radius: 20px;
+    border-radius: 22px;
     transform: translateY(130px);
     
 
     p {
         font-family: 'Acumin Pro';
         font-weight: 900;
-        font-size: 36px;
+        font-size: 30px;
         color: #fff;
         padding: 70px;
         letter-spacing: 1px;
@@ -585,7 +588,7 @@ input::-webkit-input-placeholder {
         font-family: 'Noto Sans';
         font-style: normal;
         font-weight: 600;
-        font-size: 18px;
+        font-size: 16px;
         transition: 0.4s all ease;
      
 
@@ -616,7 +619,7 @@ input::-webkit-input-placeholder {
 
 .footer-signUp {
     padding-top: 214px;
-    margin-right: 160px;
+    margin-right: 163px;
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
@@ -632,7 +635,7 @@ input::-webkit-input-placeholder {
 
     font-family: 'Noto Sans';
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
     width: 597px;
     line-height: 167%;
@@ -651,7 +654,7 @@ input::-webkit-input-placeholder {
         font-style: normal;
         font-weight: 400;
         height: 52px;
-        font-size: 18px;
+        font-size: 16px;
         background: rgba(255, 255, 255, 0.116382);
         border: none;
         color: white;
@@ -666,7 +669,7 @@ input::-webkit-input-placeholder {
         height: 52px;
         border: none;
         font-weight: 600;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 20px;
         letter-spacing: 3px;
         padding: 16px;
@@ -698,14 +701,16 @@ input::-webkit-input-placeholder {
     display: flex;
     padding-top: 217px;
     align-items: center;
+    
 }
 
 .footer-navigation__list {
 
-    margin-right: 90px;
+    margin-right: 173px;
 
     & li {
         margin-bottom: 20px;
+        font-size: 16px;
     }
 
     .designed_navlink {
@@ -721,7 +726,7 @@ input::-webkit-input-placeholder {
     & a {
         color: rgba(255, 255, 255, 0.7);
         font-weight: 300;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 167%;
         transition: 0.4s all ease;
 
@@ -735,14 +740,17 @@ input::-webkit-input-placeholder {
 
 .second-footernav_list {
 
+    margin-right: 0px;
+
     & li {
         margin-bottom: 20px;
+        font-size: 16px;
     }
     
     & a {
         color: white;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 167%;
         transition: 0.4s all ease;
 
@@ -816,7 +824,7 @@ input::-webkit-input-placeholder {
 }
 
 .arrowicon {
-    font-size: 70px;
+    font-size: 60px;
     color: #1AD3C1;
 
     &:active {
@@ -834,4 +842,22 @@ input::-webkit-input-placeholder {
 .menu-burger_img {
     width: 40px;
     height: 20px;
+}
+
+
+// map
+
+.map-wrapper {
+    overflow: hidden;
+}
+
+.map_frame {
+    height: 290px;
+    width: 520px;
+    transition: 0.4s all ease;
+
+    &:hover {
+        height: 820px;
+        transition: 0.4s all ease;
+    }
 }
