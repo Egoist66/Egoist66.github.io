@@ -5,14 +5,14 @@ var button__box = document.querySelector('.button__box');
 var body = document.querySelector('.body');
 var title = document.querySelector('h1');
 
-document.addEventListener('DOMContentLoaded', function (){
+document.addEventListener('DOMContentLoaded', function () {
 
-        function time(){
-            alert('Tap the Heart below');
-        }
+    function time() {
+        alert('Нажми на сердце ниже');
+    }
 
-        button__box.classList.add('show');
-        setTimeout(time, 3200);
+    button__box.classList.add('show');
+    setTimeout(time, 3200);
 
 
 
@@ -20,23 +20,22 @@ document.addEventListener('DOMContentLoaded', function (){
         event.preventDefault();
 
 
-      let person = {
-        name: prompt('What is name of person you like?').trim(),
-        lastName:  prompt('What is the last name of this one?').trim(),
-      }
+        let person = {
+            name: prompt('Имя человека которого ты любишь?').trim(),
+            lastName: prompt('Фамилия этого человека?').trim(),
+        }
 
-        if(person.name === 'Ksenia' && person.lastName === 'Uvarovskaya'){
-            alert("Let's see if this girl can start the Heart");
+        if (person.name === 'Настя' && person.lastName === 'Наумик') {
+            alert("Давай посмотрим - сможет ли она завести сердце");
             heart.classList.toggle('active');
-            valentine.textContent = "It's beating";
             body.classList.add('active');
-            title.textContent = 'It seems Ksenia is the One you need' + ' ' + '💞';
+            title.textContent = 'Похоже что Настя тот человек который нужен' + ' ' + '💞';
 
 
-        }else {
-            alert('You have made a big Mistake ever');
+        } else {
+            alert('Ты сделал самую большую ошибку');
             body.classList.remove('active');
-            title.textContent = 'You have chosen wrong Girl, so go Fuck yourself' + ' ' +  '😡';
+            title.textContent = 'Ты выбрал не ту девушку фак ю Бич!' + ' ' + '😡';
 
 
         }
