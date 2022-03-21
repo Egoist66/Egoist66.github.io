@@ -93,9 +93,9 @@ input::-webkit-input-placeholder { color: #687D8D !important; }
 
 .location-section { min-height: auto; width: 100%; }
 
-.locations { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-align: initial; -ms-flex-align: initial; align-items: initial; padding-bottom: 106px; }
+.locations { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: initial; -ms-flex-align: initial; align-items: initial; padding-bottom: 106px; }
 
-.locations-countries { padding-top: 104px; }
+.locations-countries { padding-top: 104px; margin-right: 34px; }
 
 .locations__title { font-family: 'Acumin Pro'; font-weight: 900; font-size: 30px; color: #031D31; padding-bottom: 36px; }
 
@@ -112,13 +112,13 @@ input::-webkit-input-placeholder { color: #687D8D !important; }
 
 .locations__countries-box { padding-bottom: 86px; }
 
-.locations-map { padding-top: 50px; }
+.locations-map { padding-top: 174px; }
 
 .map_frame { border-radius: 12px; }
 
 .disabled_country { visibility: hidden !important; }
 
-.locations__delivery { display: grid; grid-template-columns: repeat(3, 210px); grid-template-rows: minmax(-webkit-min-content, 109px) minmax(-webkit-min-content, 109px) minmax(-webkit-min-content, 109px); grid-template-rows: minmax(min-content, 109px) minmax(min-content, 109px) minmax(min-content, 109px); -webkit-column-gap: 60px; column-gap: 60px; row-gap: 60px; }
+.locations__delivery { display: grid; grid-template-columns: repeat(3, 210px); grid-template-rows: minmax(-webkit-min-content, 109px) minmax(-webkit-min-content, 109px) minmax(-webkit-min-content, 109px); grid-template-rows: minmax(min-content, 109px) minmax(min-content, 109px) minmax(min-content, 109px); -webkit-column-gap: 40px; column-gap: 40px; row-gap: 60px; }
 
 .country { padding-bottom: 15px; padding-top: 14px; margin-left: 50px; }
 
@@ -134,7 +134,9 @@ input::-webkit-input-placeholder { color: #687D8D !important; }
 
 .Belarus_box, .Ukraine_box, .Poland_box, .Colombia_box { padding-bottom: 0px; }
 
-.banner { width: 1080px; margin: 0 auto; min-height: 258px; background: linear-gradient(49.57deg, rgba(7, 242, 219, 0.7) 7.57%, rgba(255, 225, 68, 0.7) 93.53%), url("../images/banner.png") no-repeat; background-size: cover; border-radius: 23px; -webkit-transform: translateY(130px); transform: translateY(130px); }
+.banner-wrapper { -webkit-transform: translateY(130px); transform: translateY(130px); }
+
+.banner { width: 100%; margin: 0 auto; min-height: 258px; background: linear-gradient(49.57deg, rgba(7, 242, 219, 0.7) 7.57%, rgba(255, 225, 68, 0.7) 93.53%), url("../images/banner.png") no-repeat; background-size: cover; border-radius: 23px; }
 .banner p { font-family: 'Acumin Pro'; font-weight: 900; font-size: 30px; color: #fff; padding: 70px; letter-spacing: 1px; text-align: center; }
 
 .banner__linkBox { text-align: center; padding-bottom: 80px; }
@@ -192,6 +194,6 @@ input::-webkit-input-placeholder { color: #687D8D !important; }
 
 .menu-burger_img { width: 40px; height: 20px; }
 
-.map_frame { height: 290px; width: 560px; -webkit-transition: 0.5s all ease-in-out; transition: 0.5s all ease-in-out; }
+.map_frame { height: 685px; width: 600px; -webkit-transition: 0.5s all ease-in-out; transition: 0.5s all ease-in-out; }
 
 .active.map_frame { height: 820px; -webkit-transition: 0.5s all ease-in-out; transition: 0.5s all ease-in-out; }

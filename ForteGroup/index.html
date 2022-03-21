@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link type="text/css" rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/Egoist66/Egoist66.github.io@01914a82906a0ab53b2c2ac1051b335c4d139b72/reactcss/css/react.css">
     <link rel="stylesheet" href="assets/styles/style.css">
@@ -287,7 +288,7 @@
                 </div>
 
 
-                <div class="locations-map">
+                <div data-aos="fade-left" class="locations-map">
 
                     <div class="map-wrapper">
 
@@ -311,21 +312,27 @@
 
             </div>
 
+            <div class="banner-wrapper">
 
-            <div class="banner">
 
-                <p class="banner__text">
-                    Are you looking to join our team or refer a friend?
-                </p>
+                <div data-aos="fade-up-left" class="banner">
 
-                <div class="banner__linkBox">
+                    <p class="banner__text">
+                        Are you looking to join our team or refer a friend?
+                    </p>
 
-                    <a href="#" class="banner_link">Visit Careers</a>
+                    <div class="banner__linkBox">
+
+                        <a href="#" class="banner_link">Visit Careers</a>
+
+                    </div>
+
 
                 </div>
 
 
             </div>
+
 
 
 
@@ -502,6 +509,11 @@
 
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/script.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

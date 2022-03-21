@@ -424,12 +424,13 @@ input::-webkit-input-placeholder {
 
 .locations {
    
-    @include FlexBox();
+    @include flex();
     align-items:initial;
     padding-bottom: 106px;
 }
 .locations-countries {
     padding-top: 104px;
+    margin-right: 34px;
 }
 
 .locations__title {
@@ -490,7 +491,7 @@ input::-webkit-input-placeholder {
 }
 
 .locations-map {
-    padding-top: 50px;
+    padding-top: 174px;
 }
 
 .map_frame {
@@ -505,7 +506,7 @@ input::-webkit-input-placeholder {
     display: grid;
     grid-template-columns: repeat(3, 210px);
     grid-template-rows: minmax(min-content, 109px) minmax(min-content, 109px) minmax(min-content, 109px);
-    column-gap: 60px;
+    column-gap: 40px;
     row-gap: 60px;
 }
 
@@ -549,15 +550,19 @@ input::-webkit-input-placeholder {
 
 //*****************************************************
 
+.banner-wrapper {
+    transform: translateY(130px);
+}
+
 
 .banner {
-    width: 1080px;
+    width: 100%;
     margin: 0 auto;
     min-height: 258px;
     background:  $gradient, url('../images/banner.png') no-repeat;
     background-size: cover;
     border-radius: 23px;
-    transform: translateY(130px);
+   
     
 
     p {
@@ -849,8 +854,8 @@ input::-webkit-input-placeholder {
 
 
 .map_frame { 
-    height: 290px;
-    width: 560px;
+    height: 685px;
+    width: 600px;
     transition: 0.5s all ease-in-out;
 
 }

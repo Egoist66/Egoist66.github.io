@@ -78,6 +78,6 @@ $(window).scroll(function () {
 
 });
 
-map_frame.hover(function () {
-    map_frame.toggleClass('active');
-});
+// map_frame.hover(function () {
+//     map_frame.toggleClass('active');
+// });
