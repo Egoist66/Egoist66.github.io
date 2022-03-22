@@ -120,14 +120,26 @@ function activeBurger() {
     } else {
         document.documentElement.style.overflow = 'auto';
     }
+
+
+
+}
+
+function resize() {
+
+    if (window.outerWidth >= 500) {
+        mobile_menu.classList.remove('active');
+        document.documentElement.style.overflow = 'auto';
+    }
 }
 
 
 
+
+
+
 menu_burger.addEventListener('click', activeBurger);
-
-
-
+window.addEventListener('resize', resize);
 
 
 

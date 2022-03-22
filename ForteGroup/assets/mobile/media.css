@@ -240,3 +240,10 @@
 
     }
 }
+
+
+@media(min-width:500px){
+    .active.mobile-menu {
+        display: none !important;
+    }
+}

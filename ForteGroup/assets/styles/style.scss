@@ -472,10 +472,12 @@ input::-webkit-input-placeholder {
     width: 209px;
 
     &::before {
-        content: url('../countryIcons/usa.svg');
+        width: 30px;
+        height: 30px;
+        content: url('../countryIcons/USA.svg');
         display: inline-block;
         margin-right: 15px;
-        vertical-align: middle;
+        vertical-align: sub;
         float: left;
     }
 }
@@ -531,24 +533,32 @@ input::-webkit-input-placeholder {
 }
 
 .Ukraine_box::before {
-    content: url('../countryIcons/ukraine.svg');
+    width: 30px;
+    height: 30px;
+    content: url('../countryIcons/Ukraine.svg');
     display: inline-block;
 }
 
 
 
 .Poland_box::before {
-    content: url('../countryIcons/poland.svg');
+    width: 30px;
+    height: 30px;
+    content: url('../countryIcons/Poland.svg');
     display: inline-block;
 }
 
 .Belarus_box::before {
-    content: url('../countryIcons/belarus.svg');
+    width: 30px;
+    height: 30px;
+    content: url('../countryIcons/Belarus.svg');
     display: inline-block;
 }
 
 .Colombia_box::before {
-    content: url('../countryIcons/colombia.svg');
+    width: 30px;
+    height: 30px;
+    content: url('../countryIcons/Colombia.svg');
     display: inline-block;
 }
 
