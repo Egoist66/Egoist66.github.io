@@ -42,11 +42,14 @@ $gradient: linear-gradient(49.57deg, rgba(7, 242, 219, 0.7) 7.57%, rgba(255, 225
 //     scroll-behavior: smooth;
 // }
 
+
 body,html {
     width: 100%;
     box-sizing: border-box;
     font-family: 'Noto Sans';
-    overflow-x: hidden;
+    position: relative;
+    overflow-x: hidden !important;
+   
    
     
 }
@@ -64,15 +67,20 @@ body,html {
 
 header {
     width: 100%;
-    padding: 30px 0px;
+    padding: 10px 0px;
     margin-bottom: 151px;
+    transition: background-color 0.3s  ease;
+    
    
 }
 
+
+
 .container {
     max-width: $container;
-    padding: 0 40px;
+    padding: 0 30px;
     margin: 0 auto;
+    
    
 }
 
@@ -842,11 +850,22 @@ input::-webkit-input-placeholder {
 
 .menu-burger {
     display: none;
+    transition: 0.4s all ease;
+    will-change: contents;
+    z-index: 777;
+    cursor: pointer;
 }
+
 
 .menu-burger_img {
     width: 40px;
     height: 20px;
+}
+
+.active.menu-burger {
+    transform: scale(1.15) rotate(180deg) ;
+    transition: 0.4s all ease;
+    will-change: contents;
 }
 
 
@@ -863,4 +882,53 @@ input::-webkit-input-placeholder {
 .active.map_frame {
     height: 820px;
     transition: 0.5s all ease-in-out;
+}
+
+// sticky header
+
+.sticky.header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+    background-color: #09263e;
+    transition: background-color 0.3s  ease;
+    
+}
+
+// mobile-menu
+
+.mobile-menu {
+    transform: scale(0);
+    height: 0px;
+    transition: 0.4s transform ease;
+}
+
+.mobile-menu > ul {
+    height: 0px;
+    transform: 0.3s height ease;
+}
+
+.active.header-navigation__list {
+    height: 100%;
+    transform: 0.3s height ease !important;
+
+}
+
+.active.mobile-menu {
+    transform: scale(1);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 100px;
+    position: fixed;
+    height: 100%;
+    opacity: 0.9;
+    width: 100%;
+    background-color: rgb(46, 45, 45);
+    z-index: 100;
+    backdrop-filter: blur(8px);
+    background-color: rgba(14,28,36,.8);
+    transition: 0.3s transform ease;
 }
