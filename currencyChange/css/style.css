@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* vars */
+
+:root {
+    --ContainerWidth: 1290px;
+    --align: 0 auto; 
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body,html {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    font-family: 'Arial';
+}
+
+.container {
+    max-width: var(--ContainerWidth);
+    margin: var(--align);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+h1 {
+    margin-bottom: 100px;
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+    transition: 0.3s all ease;
+    margin-bottom: 15px;
+}
+
+
+
+.inputs-box {
+    display: flex;
+    flex-direction: column;
+}
+
+input:focus {
+    box-shadow: 2px 1px 10px 3px crimson;
+    transition: 0.3s all ease;
+}
+
+.getdata {
+    width: 120px;
+    margin: 0 auto;
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    border-radius: 4px;
+    margin-bottom: 50px;
+}
+.getdata:active {
+    width: 100px;
+    transition: 0.3s all ease;
+}
+.getdata:hover {
+    background-color: red;
+    transition: 0.3s all ease;
+}
+
+.out-rate {
+    width: 300px;
+    height: 250px;
+    overflow: auto;
+    border: 1px solid white;
+    outline: none;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.out-text {
+   
+    background-color: black;
+    width: 250px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 3px;
+    margin: 5px auto;
+    padding: 5px;
+    
+}
+
+.off.out-text {
+    display: none;
+}
