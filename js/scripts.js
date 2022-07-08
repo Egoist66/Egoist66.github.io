@@ -51,4 +51,16 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+
+
+    function setEqualImgHeight(){
+
+        $('.img-fluid').height('192px');
+        $('.custom-work').css({
+            "padding-top": "40px",
+        });
+    }
+
+    setEqualImgHeight();
+
 });
