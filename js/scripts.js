@@ -61,7 +61,7 @@ window.addEventListener('DOMContentLoaded', event => {
         });
 
         $('.custom-work').css({
-            "padding-top": "40px",
+            "padding-top": "3rem",
             
         });
     }
