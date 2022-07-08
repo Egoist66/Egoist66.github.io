@@ -58,6 +58,7 @@ window.addEventListener('DOMContentLoaded', event => {
         $('.img-fluid').css({
             "height": "250px",
             "object-fit": "cover",
+            "border-radius": "0.5rem",
         });
 
         $('.custom-work').css({
