@@ -55,9 +55,14 @@ window.addEventListener('DOMContentLoaded', event => {
 
     function setEqualImgHeight(){
 
-        $('.img-fluid').height('192px');
+        $('.img-fluid').css({
+            "height": "250px",
+            "object-fit": "cover",
+        });
+
         $('.custom-work').css({
             "padding-top": "40px",
+            
         });
     }
 
