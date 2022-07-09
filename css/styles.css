@@ -11514,6 +11514,10 @@ html {
 
     animation: jump 1.7s ease 0s infinite normal none;
 }
+.masthead-avatar:hover {
+
+    animation: none !important;
+}
 
 
   @keyframes jump {
