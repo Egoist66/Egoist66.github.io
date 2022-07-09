@@ -67,6 +67,17 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     }
 
+    function setLazyImg(){
+
+        const images = $('.img');
+
+        images.attr('loading', 'lazy');
+
+
+        return images;
+    }
+
     setEqualImgHeight();
+    setLazyImg();
 
 });
