@@ -78,9 +78,10 @@ window.addEventListener('DOMContentLoaded', event => {
     }
     function setBlankLinks(){
 
-        const links = $('a');
+        const links = $('.works-link');
 
         links.attr('target', '_blank');
+        links.attr('rel', 'noopener');
 
         return links;
     }
