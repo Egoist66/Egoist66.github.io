@@ -76,8 +76,17 @@ window.addEventListener('DOMContentLoaded', event => {
 
         return images;
     }
+    function setBlankLinks(){
+
+        const links = $('a');
+
+        links.attr('target', '_blank');
+
+        return links;
+    }
 
     setEqualImgHeight();
     setLazyImg();
+    setBlankLinks();
 
 });
