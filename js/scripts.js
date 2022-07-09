@@ -69,7 +69,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
     function setLazyImg(){
 
-        const images = $('.img');
+        const images = $('img');
 
         images.attr('loading', 'lazy');
 
